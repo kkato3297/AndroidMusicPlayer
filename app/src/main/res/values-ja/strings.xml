@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ミュージック</string>
+    <string name="notification_channel_name_play">音声</string>
+    <string name="notification_channel_description_play">この通知の詳細情報を設定します</string>
+    <string name="drawer_open">開く</string>
+    <string name="drawer_close">閉じる</string>
+
+    <string name="nav_menu_group_library">ライブラリ</string>
+    <string name="nav_menu_music">曲</string>
+    <string name="nav_menu_album">アルバム</string>
+
+    <string name="nav_menu_license">ライセンス</string>
+    <string name="nav_menu_version">バージョン</string>
+
+    <string name="title_license">ライセンス情報</string>
+    <string name="detail_license">このソフトウェアは以下に示すライセンスにより公開されているサードパーティ製ライブラリを使用しています。</string>
+</resources>

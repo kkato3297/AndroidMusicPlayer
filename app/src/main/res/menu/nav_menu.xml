@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/nav_menu_group_library">
+        <menu>
+            <item
+                android:id="@+id/nav_menu_music"
+                android:title="@string/nav_menu_music" />
+            <item
+                android:id="@+id/nav_menu_album"
+                android:title="@string/nav_menu_album" />
+        </menu>
+    </item>
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu_license"
+            android:title="@string/nav_menu_license" />
+        <item
+            android:id="@+id/nav_menu_version"
+            android:title="@string/nav_menu_version" />
+    </group>
+</menu>

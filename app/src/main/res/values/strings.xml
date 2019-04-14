@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Music</string>
+    <string name="notification_channel_name_play">Sound</string>
+    <string name="notification_channel_description_play">Setting for detail information of this notification</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+    <string name="nav_menu_group_library">library</string>
+    <string name="nav_menu_music">All Music</string>
+    <string name="nav_menu_album">Album</string>
+
+    <string name="nav_menu_license">License</string>
+    <string name="nav_menu_version">Version</string>
+
+    <string name="title_license">License Information</string>
+    <string name="detail_license">This software uses a third party library published under the license below.</string>
+
+</resources>

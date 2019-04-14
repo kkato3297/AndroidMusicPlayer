@@ -1,0 +1,10 @@
+com.kksystems.musicplayer
+com.kksystems.musicplayer.adapter
+com.kksystems.musicplayer.model
+com.kksystems.musicplayer.service
+com.kksystems.musicplayer.utils
+com.kksystems.musicplayer.view.event
+com.kksystems.musicplayer.view.fragment
+com.kksystems.musicplayer.view.fragment.old
+com.kksystems.musicplayer.viewholder
+com.kksystems.musicplayer.viewmodel

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_child_graph"
+    app:startDestination="@id/rootFragment">
+
+    <fragment
+        android:id="@+id/licenseFragment"
+        android:name="com.kksystems.musicplayer.view.fragment.LicenseFragment"
+        android:label="license"
+        tools:layout="@layout/license" />
+    <navigation
+        android:id="@+id/albumGroup"
+        app:startDestination="@id/albumlistFragment">
+        <fragment
+            android:id="@+id/albumlistFragment"
+            android:name="com.kksystems.musicplayer.view.fragment.AlbumlistFragment"
+            android:label="albumlist"
+            tools:layout="@layout/albumlist">
+            <argument
+                android:name="com.kksystems.musicplayer.MEDIA_ID"
+                android:defaultValue="type:album"
+                app:argType="string" />
+            <action
+                android:id="@+id/action_albumlistFragment_to_songlistFragment"
+                app:destination="@id/songlistFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right" />
+        </fragment>
+        <fragment
+            android:id="@+id/songlistFragment"
+            android:name="com.kksystems.musicplayer.view.fragment.SonglistFragment"
+            android:label="songlist" />
+        <action
+            android:id="@+id/action_global_licenseFragment"
+            app:destination="@id/licenseFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </navigation>
+    <fragment
+        android:id="@+id/rootFragment"
+        android:name="com.kksystems.musicplayer.view.fragment.RootFragment"
+        android:label="root"
+        tools:layout="@layout/root" >
+        <action
+            android:id="@+id/action_rootFragment_to_licenseFragment2"
+            app:destination="@id/licenseFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_rootFragment_to_albumGroup"
+            app:destination="@+id/albumGroup"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_rootFragment_to_playlistGroup"
+            app:destination="@id/playlistGroup"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <navigation
+        android:id="@+id/playlistGroup"
+        app:startDestination="@id/playlistFragment">
+        <fragment
+            android:id="@+id/playlistFragment"
+            android:name="com.kksystems.musicplayer.view.fragment.PlaylistFragment"
+            android:label="playlist"
+            tools:layout="@layout/playlist">
+            <argument
+                android:name="com.kksystems.musicplayer.MEDIA_ID"
+                android:defaultValue="type:all"
+                app:argType="string" />
+        </fragment>
+    </navigation>
+</navigation>
